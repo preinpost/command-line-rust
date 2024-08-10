@@ -3,9 +3,22 @@ name = "hello"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "echor_1"
+[[bin]]
+name = "echor_2"
+[[bin]]
+name = "echor_3"
+
 [dev-dependencies]
 assert_cmd = "2.0.15"
 pretty_assertions = "1.4.0"
+anyhow = "1.0.86"
 
 [dependencies]
-clap = "4.5.13"
+assert_cmd = "2.0.15"
+clap = { version = "4.5.15", features = ["derive"] }
+env_logger = "0.11.5"
+log = "0.4.22"
+predicates = "3.1.2"
+pretty_assertions = "1.4.0"
